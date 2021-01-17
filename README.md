@@ -1,4 +1,4 @@
-# ConsumableJar
+# Consumable Jar
 A repository of mathematical transcriptions and translations.
 
 ### Compiling
