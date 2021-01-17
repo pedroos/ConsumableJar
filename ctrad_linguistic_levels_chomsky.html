@@ -1,0 +1,195 @@
+<style type="text/css">
+    code {
+        font-weight: bold;
+        font-size: 16pt;
+    }
+</style>
+
+<h1>Linguistic levels (Chomsky)</h1>
+
+<div class="article_details">
+<p>Chapter II of Noam Chomsky, The Logical Structure of Linguistic Theory, MIT (1955). Transcription by Consumable Jar.</p><hr/>
+</div>
+
+<p>In considering the nature of linguistic theory, we have been led to regard the theory of linguistic structure as being, essentially, the abstract study of 'levels of representation'. Before going on to develop certain of the specific structures of linguistic theory, we will investigate the general nature of such systems of representation, and we will develop some simple ideas that will be useful later on.</p>
+
+<blockquote>
+    The particular form of these constructions was suggested by an unpublished paper of Henry Hiz, entitled "Positional Algebras and Structural Linguistics". In the details of notation and axiomatization, we generally follow P. Rosenbloom, Elements of Mathematical Logic, Appendix 2, The Algebraic Approach to Language.
+</blockquote>
+
+<p>A linguistic level is a system $L$ in which we construct unidimensional representations of utterance. Thus a level has a certain fixed and finite 'alphabet' of indecomposable atomic elements, which we will call its 'primes'. Given two primes of $L$ we can form a new element of $L$ by an operation called 'concatenation', symbolized by the arch $\frown$. Thus if $a$ and $b$ are (not necessarily distinct) primes of $L$, we can form $a\frown b$ and $b\frown a$ as new elements of $L$. Concatenation is essentially the process of spelling, where primes are taken as 'letters'. Given the element $a\frown b$ and the prime $c$, we can form a new element by concatenating $a\frown b$ with $c$. This element is denoted "$(a\frown b)\frown c$". It is identical with the element formed by concatenating the prime $a$ and the element $b\frown c$. That is, $a\frown(b\frown c)=(a\frown b)\frown c$; $a\frown(b\frown c)$ and $(a\frown b)\frown c$ are names for the same element. Because of this property of <b>associativity</b> of concatenation, we can drop parentheses, and write this element as $a\frown b\frown c$. E.g., on the phonemic level in English we have the primes $p$, $i$ and $n$, and we can form the compound elements $p\frown i$, $i\frown p$, $n\frown i$, etc.. Concatenating $p\frown i$ with $n$ we form $(p\frown i)\frown n$, which is identical with the element formed by concatenating $p$ with $i\frown n$. This can thus be written unambiguously as $p\frown i\frown n$, the representation on this level of the word "pin".<br/><br/>
+In general, given two elements $X$ and $Y$ of $L$, whether primes or not, we can form by concatenation the new elements $X\frown Y$ and $Y\frown X$, and concatenation is associative for such compound elements. The elements of the system $L$ will be called <b>strings</b> in $L$.</p>
+
+<blockquote>
+    A string is regarded as a single 'object', distinct from a sequence. Thus the string $X_1\frown X_2\frown\ldots\frown X_n$ must be sharply distinguished from the sequence $X_1,\ldots,X_n$, or the sequence $X_1\frown X_2\frown X_3\frown X_4,\ldots,X_{n-1}\frown X_n$, etc.. We might develop concatenation theory differently without making this distinction. This would give a more economical theory, but would require certain artificial devices (Quine, Mathematical Logic, p. 56).
+</blockquote>
+
+<p>It is convenient to assume that the system $L$ contains an <b>identity</b> element which, when concatenated with any string $X$, yields again the string $X$. We will call this element, which is unique, the unit $U$ of $L$. Thus for any string $X$, 
+$$
+X\frown U=U\frown X=X\text{.}
+$$
+We will see that the postulation of a unit element in each level greatly simplifies the construction of levels and the development of the formal relations between them.</p>
+
+<p>The unit element $U$ of $L$ must, however, not be confused with any so-called 'zero elements' which may be set up as primes of $L$, and for which we use the symbols $\emptyset_1, \emptyset_2, \ldots$ ($U$ will not be considered a prime, but of course it is also not a compound string.) Zero morphemes, etc., are quite familiar in linguistic work. We can characterize a zero element of the level $L$ as a prime of $L$ which happens to correspond to the unit element of some lower level. For example, consider the two levels $\text{Pm}$ and $M$, the phonemic and the morphemic levels, respectively. We can 'spell' a certain utterance in terms of phonemes or in terms of morphemes, i.e., we can associate with this utterance a certain string in $\text{Pm}$ and a certain string in $M$, as in the next paragraph (quoted):</p>
+
+<p>"(...) We find, incidentally, that the suggested approach enables us to bypass certain of the problems of interpretation that arise when linguistic elements of higher levels (e.g., morphemes) are understood as literally constructed out of lower level elements (e.g., phonemes). Thus the verb "walked" is naturally analyzed into the morphemes "walk" and "ed", but there has been considerable discussion about the morphemic analysis of the structurally parallel verb "took" [55]. We might say that this form is composed of a discontinuous stem <code>/t..k/</code> and an infix <code>/u/</code> (which is an allomorph of the past tense morpheme), or that it consists of a stem <code>/teyk/</code> and a morpheme "<code>ey → u</code>" which converts "take" into "took", etc.. But this problem of determining the "content" of the individual morphemes involved does not arise when we understand the morphological level to be simply a higher level of representation of utterances, connected by certain "morphonemic" relations to the phonemic level. On the phonemic level, "walked" is represented by the four-element sequence <code>/w/o/k/t</code>, and "took" by the three-element sequence <code>/t-u-k/</code>, were <code>w</code>, <code>o</code>, <code>k</code>, <code>t</code> and <code>u</code> are indecomposable 'atomic' elements of the phonemic level. On the morphological level, "walked" is represented by the two-element sequence <code>walk-past</code> and "took" by the two-element sequence <code>take-past</code>, where <code>walk</code>, <code>past</code>, and <code>take</code> are indecomposable atomic elements of the morphological level. The morphophonemic rules determine the phonemic "content" of both of these morphological representations. I.e., we must have rules to the effect that <code>walk-past</code> represents the same utterance as <code>/w-o-k-t/</code>, and that <code>take-past</code> represents the same utterance as <code>/t-u-k/</code>. The significant difference between these rules is that the first would appear as a special case of a more general rule, whereas the second would not. But this is the only interpretation of the facts which is available, in our terms. There is no need to identify part of <code>/tuk/</code> as 'belonging to' the morpheme <code>take</code>, and part to the morpheme <code>past</code>. In precisely the same way, when we say that the phoneme sequence <code>/t/</code> plus juncture is carried by the phonetic rules into the single phone <code>[T]</code>, we need not attempt to specify which part of this phone 'belongs to' the <code>/t/</code>, and which part to the juncture."</p>
+
+<p>But these strings are related. The 'morphophonemic rules' tell us which string of phonemes corresponds to a given string of morphemes. We can thus define a 'maaping' on $M$ which carries any string in $M$ into a string in $\text{Pm}$. This morphophonemic mapping will tell us how to specify a morpheme in a given context as a string of phonemes. If a certain morpheme is mapped into the unit $U$ of the phonemic level, i.e., if it disappears on this lower level, then we call this morpheme a 'zero morpheme', and we write it with the symbol $\emptyset_i$, for some $i$. We might say, then, that the element $\emptyset_i$ has real morphemic content, but no phonemic content. Thus a string of zero morphemes has a perfectly clear meaning. Zero morphemes cannot be added or dropped at will in representations in the level $M$, and they are established on the same grounds as other morphemes.</p>
+
+<blockquote>
+    The distinction between these representations (phonemes and morphemes) is sometimes confused by the fact that morphemes are generally given in phonemic spelling.
+</blockquote>
+
+<p>To recapitulate more formally, a linguistic level $L$ has the basic form of a concatenation algebra, where a concatenation algebra $C$ is a triple $\left\{C,\frown,=\right\}$, $C$ being a class of elements, $\frown$ a binary operation, and $=$ a binary relation satisfying the following system of axioms:</p>
+    
+<div style="width: 1000px; margin-left: auto; margin-right: auto;">
+    <ul class="list">
+        <li><span class="def">Ax. 1.</span><span class="deft">$=$ is an equivalence relation.</span></li>
+        <li><span class="def">Ax. 2.</span><span class="deft">If $a$, $b$, $c$, $d$ are in $C$, and $a=b$ and $c=d$, then $a\frown c=b\frown d$.</span></li>
+        <li><span class="def">Ax. 3.</span><span class="deft">If $a$, $b$ are in $C$, then $a\frown b$ is a uniquely determined element of $C$.</span></li>
+        <li><span class="def">Ax. 4.</span><span class="deft">If $a$, $b$, $c$ are in $C$, then $a\frown(b\frown c)=(a\frown b)\frown c$.</span></li>
+        <li><span class="def">Ax. 5.</span><span class="deft">If $a$, $b$, $c$ are in $C$, and $a\frown b=a\frown c$ or $b\frown c=c\frown a$, then $b=c$.</span></li>
+        <li><span class="def">Ax. 6.</span><span class="deft">If $a$, $b$, $c$, $d$ are in $C$ and $a\frown b=c\frown d$, then there is an $x$ such that either $a\frown x=c$ or $c\frown x=a$.</span></li>
+        <li><span class="def">Ax. 7.</span><span class="deft">There is an $x$ in $C$ such that for all $y$ in $C$, $x\frown y=y\frown x=y$.<br/>(It follows that this element is unique. We will designate it $U$, the <b>unit</b> element of $C$.)</span></li>
+        <li><span class="def">Ax. 8.</span><span class="deft">There is a $p$ in $C$ such that if $x\frown y=p$, then $x\neq y$, and $x=U$ or $y=U$.<br/>(An element $p$ with this property will be called a <b>prime</b>. Thus $U$ is not a prime. The class of primes of $c$ we denote $C'$.)</span></li>
+        <li><span class="def">Ax. 9.</span><span class="deft">If $a$ is in $C$, $a\neq U$, then there is a $p$, $q$, $x$, $y$ in $C$ such that $p$ and $q$ are primes and $a=p\frown x=y\frown q$.</span></li>
+        <li><span class="def">Def. 1.</span><span class="deft">$a\lt b:=$ "there is an $x$, $y$ in $C$ such that $x\frown a\frown y=b$, and $x\neq U$ or $y\neq U$".<br/>
+        (I.e., $a$ is a proper substring of $b$.)</span></li>
+        <li><span class="def">Ax. 10.</span><span class="deft">There is no infinite sequence $\left\{a_n\right\}$ of elements of $C$ such that for all $n$, $a_{n+1}\lt a_n$.<br/>
+        Ax. 10 is called by Rosenbloom the <b>descending chain condition</b>. If follows that each element of $C$ has a unique factorization into primes, i.e., a unique spelling in terms of the 'alphabet' of primes. We will usually characterize a concatenation algebra $C$ as a triple $\left\{C,\frown,=\right\}$, where $C$ is the set of primes.</span></li>
+    </ul>
+</div>
+
+<p>A linguistic level is not determined completely by the statement that it is a concatenation algebra. We must also specify its relations to other levels (i.e., the conditions of compatibility between levels) and there may be further algebraic properties within the given level.</br><br/>
+We have already noted that a grammar of a language must state the structure of each grammatical utterance of the language on each linguistic level. In carrying out linguistic analysis, then, we must construct on each level a set of elements (which we will call "$L$-markers"), one of which is assigned to each grammatical utterance. The $L$-marker of a given utterance $T$ must contain within it all information as to the structure of $T$ on the level $L$. The construction of $L$-markers, for each level $L$, is thus the fundamental task in linguistic analysis, and in the abstract construction of linguistic theory we must determine what sort of elements appear as markers on each level. In the case of most levels, markers will be simply strings. Thus on the level $\text{Pm}$ of phonemes, each grammatical utterance will be represented as string of phonemes; the $\text{Pm}$-marker of "pin" in English will be just the string $p\frown i\frown n$. However, markers are not always simply strings. We will see in chapter VI that it is necessary on the level $P$ of phrase structure to take as $P$-markers certain <b>sets</b> of strings in $P$, if we are to provide complete information about the structure of each utterance on this level.</p>
+
+<blockquote>
+    So far we have provided only one way of constructing elements in \(L\), namely, concatenation. But we will assume with no further question (or mention) that each level includes a full set theory, so that we can also form sets of strings, sequences of strings, etc.. This assumption may be dispensable, but it simplifies our constructional task (or at least the exposition of it). See Quine, Mathematical Logic, ch. 7 for general background on various kinds of concatenation theory. See Chomsky, Systems of Syntactic Analysis for discussion of the possibility of constructing linguistic theory with very meager formal apparatus, using many devices developed by Goodman (The Structure of Appearance) and Goodman and Quine (Steps Towards a Constructive Nominalism, Journal of Symbolic Logic, 1942).
+</blockquote>
+
+<p>In addition to $L$-markers, we may want to define other elements in $L$ as well as to state various relations among the elements of this level, thus extending the algebra of $L$. The relations between $L$ and other levels can be presented as a set of mappings defined on $L$. One mapping of particular importante carries the $L$-markers into gammatical utterances. This mapping we will denote $\Phi$. $\Phi$ thus assigns $L$-markers to utterances of the language (though $\Phi$ may apply to elements other than $L$-markers as well, i.e., $L$-markers may be only a proper part of its domain). By associating an $L$-marker with an utterance $T$, the mapping $\Phi$ specifies the structure of $T$ on the level $L$, since $L$-markers will be designed in such a way as to contain within them all structural information about the utterances to which they are associated by $\Phi$.<br/><br/>
+In terms of the mapping $\Phi$ and the notion of $L$-marker, we can give a clear and general sense to the important notion of <b>constructional homonymity</b>. We have a case of constructional homnymity on the level $L$ when the mapping $\Phi$ assigns two or more $L$-markers to a single utterance (more explicitly, to a set of conforming utterances). This utterance then falls in the overlap of two distinct patterns, and if our theory is adequate, such utterances should, intuitively, cases of structural ambiguity.<br/><br/>
+We do not require that the values of $\Phi$ exhaust the set of grammatical utterances. That is, some grammatical utterances may simply not be represented on a certain level. Below, we will see the usefulness of constructing th elevel of phrase structure for English in such a way that certain utterances have no markers on this level (though it will appear that these utterances acquire 'partial phrase structure' in other ways).</p>
+
+<p>In very general terms, then, a level $L$ is a system 
+    $$\begin{equation}
+    L=\left\{L,\frown,R_1,\ldots,R_m,\mu,\Phi,\phi_1,\ldots,\phi_n\right\}\label{2}\tag{2}
+    \end{equation}$$
+    where:</p>
+
+<div style="width: 1000px; margin-left: auto; margin-right: auto;">
+    <ul class="list two">
+        <li><span class="def">$L$</span><span class="deft">is a concatenation algebra with $L$ as its set of primes.</span></li>
+        <li><span class="def">$R_1,\ldots,R_m$</span><span class="deft">are properties and relations defined within $L$. $R_1$ is the identity relation $=$.</span></li>
+        <li><span class="def">$\mu$</span><span class="deft">is the set of $L$-markers &mdash; elements of some sort constructed in $L$.</span></li>
+        <li><span class="def">$\Phi$</span><span class="deft">is a mapping which, in particular, maps $\mu$ into the set of grammatical utterances. We can regard $\Phi$ as a single-valued mapping into the set of equivalence classes of conforming utterance tokens (see comment below).</span></li>
+        <li><span class="def">$\phi_1,\ldots,\phi_n$</span><span class="deft"> are relations between $L$ and other levels.</span></li>
+    </ul>
+</div>
+
+<blockquote>
+    Conformity, as discussed in Chapter 1, was a matching relation, which is not transitive from any logical necessity. We must therefore either make the empirical assumption that it is actually an equivalence relation, or we must construct an equivalence relation from it. The assumption that conformity is actually an equivalence relation is one form of what Gentzen called "the fundamental assumption of phonology". We might perhaps consider this not as an assumption but as an axiom of linguistic theory, i.e., as a delimitation of the set of utterances which are considered in phonemic analysis.
+</blockquote>
+
+<p>We will use <sup>superscripts</sup> to indicate to which level $R_i$, $\mu$, $\Phi$ and $\phi_i$ belong, when several levels have been established.<br/><br/>
+In linguistic theory, then, we construct abstractly a set of levels of the general form $\eqref{2}$. The notions developed on each level must be fully characterized in terms of the primitive basis of linguistic theory. The resulting system of levels can be understood as offering a definition of 'language', and the operational tests for the primitives delimit the area of behavior that, in terms of the theory, can properly be called linguistic.</p>
+
+<blockquote>
+    Certain levels may be missing in the analysis of particular languages. The exact conditions under which this may be the case can not be stated until the levels are actually constructed.
+</blockquote>
+
+<p>It is interesting to inquire into the question of how closely we can specify the primes of the various levels, within general linguistic theory. The program of developing a general linguistic theory is reminescent, in certain respects, of much earlier attemps to develop a universal grammar. These attempts have generally concerned themselves with such questions as whether the categories of Noun, Verb, etc. are universally applicable. We can restate this as the question of whether it is possible, within general linguistic theory, to construct a fixed set of elements which must (or may) appear as primes on some level in the interpretation of the theory for every language.<br/><br/>
+For example, in the abstract development of the level of syntactic categories, we might attempt to actually define "Noun", "Verb", etc., as primes of this level, fixed elements that may occur in the description of many languages. Or we may simply define "syntactic category" in such a way that the nouns of English, for instance, turn out to constitute a single syntactic category, though there is no way of associating this syntactic category with some category in some other language which we might also like to consider to be nouns. The former solution, with the actual construction of a fixed prime which can appear in the grammatical description of various languages, is, of course, a much more powerful and far-reaching one, if it is at all possible. In our discussion of syntactic categories and phrase structure we will not be able to approach such a construction. We will merely suggest certain formal conditions that the primes of these levels must meet, and we will make no attemp to construct primes with, in some sense, a fixed 'content' for all languages. It is not clear what sort of basis of primitive notions would be required for this much more ambitious undertaking. Certainly such constructions would require a much richer primitive basis than anything we will consider. In the discussion of transformational structure, however, we will be able to give a much more concrete interpretation of certain of the primes of this level, and it will make sense to ask, in some cases, whether distinct languages have the same transformations.
+Suppose that we have, as primes of the word level $W$ for English, the elements "New", "York", "City", "is", "in", "State". Then we can form various strings by concatenation of these elements, e.g. 
+$$
+\text{New}\frown\text{York}\frown\text{City}\frown\text{is}\frown\text{in}\frown\text{New}\frown\text{York}\frown\text{State.}\label{3}\tag{3}
+$$</p>
+
+<blockquote>
+    Henceforth we will denote a linguistic expression either by that expression within quotes, or by the expression italicized, whichever is more convenient.
+</blockquote>
+
+<p>$\eqref{3}$ is a string in $W$, in fact a $W$-marker of the utterance "New York City is in New York State", since on the level $W$, markers will be simply strings in $W$.<br/><br/>
+For many purposes we need a notion of 'occurrence', which will enable us to refer unambiguously to the second occurrence of "New" in $\eqref{3}$, etc.. Using a device of Quine's (Mathematical Logic, p. 197, 3rd. ed.), we can identify an occurrence of a prime $X$ in a string $Y$ as that initial substring of $Y$ that ends in $X$. Thus the second occurrence of "York" in $\eqref{3}$ would be, literally, the string 
+$$
+\mathtt{New\frown York\frown City\frown is\frown in\frown New\frown York}\label{4}\tag{4}
+$$
+and the first occurrence of "York" in $\eqref{3}$ would be the string 
+$$
+\mathtt{New\frown York}\text{.}
+$$
+We will also have to speak of the occurence of non-primes, and it is convenient to construe $\eqref{4}$ as being, simultaneously, an occurrence of $\verb|York|, \verb|New|\frown \verb|York|, \verb|in|\frown \verb|New|\frown \verb|York|,\ldots$, and of itself.<br/><br/>
+</p>
+
+<span class="def">Def. 2.</span><span class="deft">$Z$ is an occurrence of $X$ in $Y$ if there is a $W_1,W_2$ such that $Y=W_1\frown X\frown W_2=Z\frown W_2$.</span>
+
+<p>Any of these elements may be the unit element. If $W_1=1$, then $Z=X$, that is $X$ is an initial substring of $Y$, and is thus an occurrence of itself. If $X=U$, then $W_1=Z$. Thus any initial substring of $Y$ (including, in particular, $U$ itself) is an occurrence of $U$ in $Y$.<br/><br/>
+Though this method of introducing the notion of occurrence is somewhat artificial, it appears to be adequate for our purposes. A different approach would be to develop an inscriptional concatenation theory, in which $\eqref{3}$ would be considered as a string of eight distinct primes, each a unique occurrence of itself. One of the relations on each level would then be the relation of <b>conformity</b>, holding for instance, between the first and the sixth primes of $\eqref{3}$ (see Chomsky, op. cit., for some elaboration of this inscriptional approach to developing linguistic theory). While this approach is more natural, it requires somewhat more elaborate constructions, and for this reason, we have not followed it in this study.</p>
+
+<p>Substitutability is the major distributional relation that will concern us below. Given a string $X$, and an occurrence $Z$ of $W$ in $X$, we will often require a notation for denoting the string that differs from $X$ only in that $Y$ is substituted for $W$. We will denote this new string by the symbol $(Y/W,Z)$.</p>
+
+<span class="def">Def. 3.</span><span class="deft">$X(Y/W,Z)$ is the string $X$ such that either, for some $Z_1, Z_2$, </span>
+
+<p>
+$$
+    X=Z_1\frown W\frown Z_2=Z\frown Z_2\label{Def3_i}\tag{Def. 3 i}
+$$
+$$
+    X=Z_1\frown Y\frown Z_2
+$$
+
+or there is no $Z_1,Z_2$ such that $\eqref{Def3_i}$, and $X=X$.</p>
+
+<p>Thus if $W$ actually is part of $X$ (occurs in $X$), then $Z$ is an occurrence of $W$ in $X$ ($Z=Z_1\frown W$), and $Z_1\frown Y$ is an occurrence of $Y$ in $X=X(Y/W,Z)$. If $W$ does not occur in $X$, then $X(Y/W,Z)=X$. If, for example, $X=\eqref{3}$, $W=\verb|New|\frown\verb|York|$, $Z=\eqref{4}$, and $Y=\verb|an Eastern|$, then $X(Y/W,Z)$ will be 
+$$
+\mathtt{New\frown York\frown City\frown is\frown in\frown an\frown Eastern\frown State}\text{.}\label{6}\tag{6}
+$$</p>
+
+<p>This notation can be extended to cover a more general case of substitution. Given a string $X$, and an occurrence $Z_1\text{ of }W_1, Z_2\text{ of }W_2,\ldots,Z_n\text{ of }W_n$ in $X$, we will denote by 
+$$
+X(Y_1/W_1,Z_1;Y_2/W_2,Z_2;\ldots;Y_n/W_n,Z_n)
+$$
+
+the string formed by replacing $W_i$ by $Y_i$, where $W_i$ precedes $W_{i+1}$.</p>
+
+<blockquote>
+    If $W_i$ and $W_{i+1}$ overlap, this substitution becomes meaningless. $\eqref{Def4_i}$ is formulated so as to rule out this possibility for non-units.
+</blockquote>
+
+<span class="def">Def. 4.</span><span class="deft">$X(Y_1/W_1,Z_1;\ldots;Y_n/W_n,Z_n)$ is the string $X$ such that </span>
+
+<p>$$
+\exists\,Y_1,\ldots,Y_n\small{\text{ such that }}Z_i\frown V_i\frown W_{i+1}=Z_{i+1}\small{\text{, for }}0\leq i\leq n-1\small{\text{, where }}Z_0=U\small{\text{ (thus }}Z\small{\text{ is an occurrence of }}W_i\small{\text{ in }}X\small{\text{)}}\label{Def4_i}\tag{Def. 4 i}
+$$
+$$
+\exists\,X_1,\ldots,X_n\small{\text{ such that }}
+$$
+$$
+X_1=X(Y_n/W_n,Z_n)\text{,}
+$$
+$$
+\small{\text{for }}i\gt1\small{\text{, }}X_i=X_{i-1}(Y_{n-i+1}/W_{n-i+1},Z_{n-i+1})\text{,}
+$$
+$$
+X=X_n\text{.}
+$$
+$W_1..W_{n-1}..X_1=X_2=..W_1..W_2\ldots W_{n-2}....Y_{n-1}..Y_n..$, etc., until finally, $X=x_n=Y_1..Y_2....Y_{n-1}..Y_n..$. The special form of this definition is dictated by the manner in which we have defined 'occurrence'.</p>
+
+<p>Suppose that $X=\eqref{3}$, $W_1=W_2=Z_1=\verb|New York|$, $Z_2=\eqref{4}$, $Y_1=\verb|the largest|$. Then $X(Y_1/W_1,Z_1;Y_2/W_2,Z_2)$ is 
+$$
+\mathtt{the\frown largest\frown city\frown is\frown in\frown an\frown Eastern\frown State}
+$$
+and the intermediate step $X_1$ is $\eqref{6}$.</p>
+
+<p>In the discussion above, then, we have given no actual content to the elements or relations of any linguistic level, but have left the matter open for specific constructions. The requirements that a level must meet are quite broad, and we are free to develop the formal structure of the various levels in many different ways.<br/><br/>
+In particular, though the representations that we construct on any linguistic level are unidimensional, we have not required that left to right order of representation correspond directly to temporal order in the represented element. Discontinuous elements provide a common instance (though not othe only one) of non-correspondence between order of representation and temporal order. Thus Semitic stems are composed of discontinuous roots and vowel patterns (e.g., Hebrew "yeled" is broken down into two morphemes, the root <code>y..l..d</code> and the vowel pattern <code>..e..e..</code>), but they can be represented quite adequately as having the order root-vowel pattern (or vice versa). Any other cases of temporal discontinuity of elements can be handled easily. On the other hand, the general case of discontinuity presents problems. By accepting a linear system of representation, we rule out the possibility of certain kinds of discontinuity. If more general kinds of discontinuity than we can handle occur in a language, a more complicated theory of representation will be necessary.</p>
+
+<blockquote>
+See Harris, Methods, for discussion of discontinuous morphemes. See also Wells, Immediate Constituents, Language 1947, V; Hockett, Problems of Morphemic Analysis, ibid., 15, Methods, 9.21 for other relevant situations.<br/>
+See Hockett, Formal Statement of Morphemic Analysis, SIL, Two Models for Grammatical Description, Linguistics Today, 3.2, and Chomsky, cp. cit., 4, for discussion of the problem of the general case of discontinuity.<br/>
+In this study, suprasegmental features (pitch, stress, juncture) have not been considered. Ultimately, of course, these phenomena must be incorporated into any full syntactic theory, and it may be that this extension will require a more elaborate system of representation. See Hockett, Two Models, for some discussion of this possibility. See (unreadable) for discussion of a linear phonemic transcription for English that includes stress and juncture, but preserves linearity of representation in a natural way.
+</blockquote>
+
+<p>The question of left-to-right and temporal correspondence can be rephrased in this way. Suppose that on the level $L$, $L$-markers are simply certain strings in $L$, and one of these markers is the string $X=X_1\frown X_2\frown\ldots\frown X_n$ ($X_i$ a prime). This marker can be taken as denoting a certain set of grammatical utterances (perhaps only one), where $\Phi$ is understood as the relation of denotation. Let $T_1$ be one of the denoted utterances. Suppose that we have defined $\Phi$ in such a way that each prime of $X$ denotes a certain segment of $T_1$. We might expect $X_1$ to denote an initial segment, $x_2$ the following segment, $\ldots$, $X_n$ the final segment, where these segments do not overlap. But there is nothing in our definition of levels that necessitates such an interpretation. That is, we have not required that $\Phi$ be an order-preserving mapping. As long as no such requirement is laid down, we are free to regard as a linguistic level any structure that has the formal properties of $\eqref{2}$. We will make use of this freedom below to suggest transformational analysis as an additional level of linguistic structure. Here, the order of representation bears no relation whatsoever to temporal order, though the system can be interpreted as a concatenation algebra, and it will appear that there is good motivation for doing so. For instance, we will see that this leads to a natural and fruitful extension of the notion of constructional homonymity. It would be possible to require as a condition on levels, that $\Phi$ be order-preserving, or partially so, but I see no motivation for this, and in view of the existence of discontinuous elements (and the desirability of taking markers as elements other than strings, on some levels), it might be difficult to formulate such a requirement.</p>
+
+<footer>Chapter II of Noam Chomsky, The Logical Structure of Linguistic Theory, MIT (1955). Transcription by Consumable Jar.</footer>

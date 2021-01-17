@@ -1,0 +1,6 @@
+conf = {
+    'title': 'Consumable Jar', 
+    'gen_dir': 'c:/cj',
+    'header': 'empty',
+    'index_page': 'toc'
+}

@@ -1,0 +1,207 @@
+/*a:link {
+    color: #222299;
+}*/
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #000000;
+    font-style: italic;
+}
+header, footer {
+    font-family: arial, 'Times New Roman', Times, serif;
+    /* font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; */
+    font-size: 12pt;
+}
+/*@media only screen and (min-width: 1400px) {
+    header {
+        width: 1780px;
+        background: url('prod/headback1c.png') no-repeat;
+    }
+    body > .content {
+        width: 1760px;
+    }
+}*/
+@media only screen and (min-width: 30000px) {
+    header {
+        width: 1280px;
+        background: url('back1.jpg') no-repeat;
+        background-size: 1310px 280px ;
+        height: 280px;
+        color: white;
+        /* border-left: 1px solid #888888;
+        border-right: 1px solid #888888; */
+    }
+    header .title {
+        float: left;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    header hr.hr1 {
+        display: none;
+    }
+    header .title a {
+        color: white !important;
+    }
+    header .links {
+        /*clear: left;*/
+        margin-bottom: 14px;
+    }
+    header .links_left {
+        float: left;
+    }
+    header .links_right {
+        float: left;
+    }
+    footer {
+        width: 1280px;
+        height: 40px;
+        padding: 15px;
+        background: black;
+    }
+    body > .content {
+        width: 1280px;
+        /* border-left: 1px solid #888888;
+        border-right: 1px solid #888888; */
+    }
+    nav {
+        width: 1260px;
+        /* border-left: 1px solid #888888;
+        border-right: 1px solid #888888; */
+    }
+}
+header {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10pt;
+    text-align: center;
+    color: #999999;
+    clear: both;
+}
+header .title {
+    font-size: 30px;
+}
+header .title a {
+    text-decoration: none;
+}
+header hr.hr1 {
+    width: 500px;
+    margin-left: 0;
+}
+/* header .mobread {
+    float: left;
+    margin-left: 10px;
+    font-family: helvetica, verdana;
+    font-weight: bold;
+    font-size: 9pt;
+    line-height: 30px;
+} */
+header .mobread .mob {
+    color: #5E7CA2;
+}
+header .mobread .read {
+    color: #414141;
+}
+header .headsect {
+    /*font-style: italic;*/
+}
+header .left {
+    float: left;
+    width: 30%;
+}
+header .middle {
+    float: left;
+    width: 25%;
+    padding: 40px;
+}
+header .middle a {
+    text-decoration: none;
+}
+header .right {
+    float: right;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+header .right a {
+    text-decoration: none;
+}
+header .links_left {
+    clear: left;
+}
+header .links_right {
+    margin-left: 100px;
+}
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; */
+    text-transform: uppercase;
+}
+nav ul {
+    list-style-type: none;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+}
+nav li {
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    padding: 0 20px;
+}
+nav li:first-child {
+    padding-left: 0px;
+}
+nav li:last-child {
+    border-right: none;
+}
+nav a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+}
+nav a:hover {
+    color: #cccccc;
+}
+li.nobu {
+    list-style-type: none;
+}
+body > .content div.notebox {
+    background: lightyellow;
+    border: brown;
+    margin: 0;
+    padding: 8px;
+    text-align: justify;
+}
+body > .content div.notebox h3.start {
+    margin-block-start: 4px;
+}
+body > .content div.notebox ul.end {
+    margin-block-end: 4px;
+}
+body > .content span.notebox {
+    background: lightyellow;
+    border: brown;
+}
+body > .content span.remark {
+    /* font-style: italic; */
+    /* font-family: cursive; */
+    /* background: #eeeeee; */
+}
+.lig {
+    color: #999999;
+}
+.llig {
+    color: #777777;
+}

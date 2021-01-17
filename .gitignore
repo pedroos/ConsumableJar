@@ -1,0 +1,4 @@
+__pycache__
+gen2/conf.py
+*.pyc
+.vs/

@@ -1,0 +1,43 @@
+/* body.trad h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 26px;
+}*/
+/* body.trad h2 {
+    font-family: 'Marvel', monospace;
+    font-size: 36px;
+} */
+body.trad h3 {
+    font-family: 'Marvel', monospace;
+    font-size: 18px;
+}
+/*body.trad h4 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
+}
+body.trad ul.toc {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    line-height: 26px;
+} */
+body.trad ul.toc {
+    font-family: 'Marvel', monospace;
+    font-size: 20px;
+    line-height: 24px;
+}
+body.trad blockquote {
+    background: #eeeeee;
+    padding: 10px;
+}
+body.trad .toppanel {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+body.trad .toppanel input[type=checkbox] {
+    transform: scale(1.3);
+}
+body.trad blockquote.orig {
+    display: none;
+}
